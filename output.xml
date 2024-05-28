@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-17T17:57:14.278487" rpa="false" schemaversion="5">
-<suite id="s1" name="Preenchimento Correto" source="c:\Users\Leo Camilo\Documents\Programação\cruso-robot\preenchimento_correto.robot">
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-05-27T17:33:25.839086" rpa="false" schemaversion="5">
+<suite id="s1" name="Preenchimento Correto" source="c:\Users\leona\Documents\Projetos\cruso-robot\preenchimento_correto.robot">
 <test id="s1-t1" name="Verificar se é possivel criar mais de um card se preenchermos os campos corretamente" line="32">
 <kw name="Dado que eu acesse o Organo" owner="setup_teardown" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-17T17:57:14.435630" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<msg time="2024-05-27T17:33:26.049153" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
 <arg>url=http://localhost:3000/</arg>
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-17T17:57:14.434629" elapsed="1.786680"/>
+<status status="PASS" start="2024-05-27T17:33:26.049153" elapsed="2.807808"/>
 </kw>
-<status status="PASS" start="2024-05-17T17:57:14.434629" elapsed="1.786680"/>
+<status status="PASS" start="2024-05-27T17:33:26.048150" elapsed="2.809808"/>
 </kw>
 <kw name="Dado que preencha os campos do formulario">
 <kw name="FakerLibrary.First Name">
-<msg time="2024-05-17T17:57:16.224311" level="FAIL">No keyword with name 'FakerLibrary.First Name' found.</msg>
+<msg time="2024-05-27T17:33:28.864965" level="FAIL">No keyword with name 'FakerLibrary.First Name' found.</msg>
 <var>${Nome}</var>
-<status status="FAIL" start="2024-05-17T17:57:16.224311" elapsed="0.001002">No keyword with name 'FakerLibrary.First Name' found.</status>
+<status status="FAIL" start="2024-05-27T17:33:28.863965" elapsed="0.003995">No keyword with name 'FakerLibrary.First Name' found.</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>${CAMPO_NOME}</arg>
 <arg>${Nome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-05-17T17:57:16.225313" elapsed="0.001000"/>
+<status status="NOT RUN" start="2024-05-27T17:33:28.868965" elapsed="0.000000"/>
 </kw>
 <kw name="FakerLibrary.Job">
 <var>${Cargo}</var>
-<status status="NOT RUN" start="2024-05-17T17:57:16.227315" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-27T17:33:28.873965" elapsed="0.000999"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>${CAMPO_CARGO}</arg>
 <arg>${Cargo}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-05-17T17:57:16.227315" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-27T17:33:28.874964" elapsed="0.000000"/>
 </kw>
 <kw name="FakerLibrary.Image Url">
 <var>${Imagem}</var>
-<status status="NOT RUN" start="2024-05-17T17:57:16.228316" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-27T17:33:28.878960" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>${CAMPO_IMAGEM}</arg>
 <arg>${Imagem}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-05-17T17:57:16.228316" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-27T17:33:28.879959" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${CAMPO_TIME}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-05-17T17:57:16.228316" elapsed="0.001001"/>
+<status status="NOT RUN" start="2024-05-27T17:33:28.880962" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${OPCAO_PROGRAMACAO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-05-17T17:57:16.229317" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-27T17:33:28.881958" elapsed="0.001002"/>
 </kw>
-<status status="FAIL" start="2024-05-17T17:57:16.222310" elapsed="0.007007">No keyword with name 'FakerLibrary.First Name' found.</status>
+<status status="FAIL" start="2024-05-27T17:33:28.858958" elapsed="0.025002">No keyword with name 'FakerLibrary.First Name' found.</status>
 </kw>
 <kw name="E clique no botão criar card">
-<status status="NOT RUN" start="2024-05-17T17:57:16.229317" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-27T17:33:28.885958" elapsed="0.000000"/>
 </kw>
 <kw name="Fechar o navegador" owner="setup_teardown" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-17T17:57:16.230317" elapsed="2.089805"/>
+<status status="PASS" start="2024-05-27T17:33:28.888960" elapsed="2.282933"/>
 </kw>
-<status status="PASS" start="2024-05-17T17:57:16.230317" elapsed="2.089805"/>
+<status status="PASS" start="2024-05-27T17:33:28.887962" elapsed="2.284673"/>
 </kw>
-<status status="FAIL" start="2024-05-17T17:57:14.433628" elapsed="3.886494">No keyword with name 'FakerLibrary.First Name' found.</status>
+<status status="FAIL" start="2024-05-27T17:33:26.046150" elapsed="5.128490">No keyword with name 'FakerLibrary.First Name' found.</status>
 </test>
-<status status="FAIL" start="2024-05-17T17:57:14.281490" elapsed="4.039634"/>
+<status status="FAIL" start="2024-05-27T17:33:25.843082" elapsed="5.340158"/>
 </suite>
 <statistics>
 <total>
@@ -81,19 +81,19 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-17T17:57:14.429625" level="ERROR">Error in file 'c:\Users\Leo Camilo\Documents\Programação\cruso-robot\preenchimento_correto.robot' on line 3: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'pkg_resources'
+<msg time="2024-05-27T17:33:26.038033" level="ERROR">Error in file 'c:\Users\leona\Documents\Projetos\cruso-robot\preenchimento_correto.robot' on line 3: Importing library 'FakerLibrary' failed: ModuleNotFoundError: No module named 'pkg_resources'
 Traceback (most recent call last):
-  File "C:\Users\Leo Camilo\AppData\Local\Programs\Python\Python312\Lib\site-packages\FakerLibrary\__init__.py", line 1, in &lt;module&gt;
+  File "C:\Users\leona\AppData\Local\Programs\Python\Python312\Lib\site-packages\FakerLibrary\__init__.py", line 1, in &lt;module&gt;
     import pkg_resources
 PYTHONPATH:
-  c:\Users\Leo Camilo\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
-  C:\Users\Leo Camilo\Documents\Programação\cruso-robot
-  c:\Users\Leo Camilo\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
-  c:\Users\Leo Camilo\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
-  C:\Users\Leo Camilo\AppData\Local\Programs\Python\Python312\python312.zip
-  C:\Users\Leo Camilo\AppData\Local\Programs\Python\Python312\DLLs
-  C:\Users\Leo Camilo\AppData\Local\Programs\Python\Python312\Lib
-  C:\Users\Leo Camilo\AppData\Local\Programs\Python\Python312
-  C:\Users\Leo Camilo\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+  c:\Users\leona\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
+  C:\Users\leona\Documents\Projetos\cruso-robot
+  c:\Users\leona\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
+  c:\Users\leona\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
+  C:\Users\leona\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\leona\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\leona\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\leona\AppData\Local\Programs\Python\Python312
+  C:\Users\leona\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
 </errors>
 </robot>
