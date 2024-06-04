@@ -11,13 +11,14 @@ ${CAMPO_CARGO}            id:form-cargo
 ${CAMPO_IMAGEM}           id:form-imagem
 ${CAMPO_TIME}             class:lista-suspensa
 ${CAMPO_CARD}             id:form-botao
-${OPCAO_PROGRAMACAO}      //option[contains(.,'Programação')]
-${OPCAO_FRONT}            //option[contains(.,'Front-End')]
-${OPCAO_DADOS}            //option[contains(.,'Dados')]
-${OPCAO_DEVOPS}           //option[contains(.,'Devops')] 
-${OPCAO_UX}               //option[contains(.,'UX e Design')]
-${OPCAO_MOBILE}           //option[contains(.,'Mobile')]
-${OPCAO_INOVACAO}         //option[contains(.,'Inovação')]
+@{selecionar_times}
+...  //option[contains(.,'Programação')]
+...  //option[contains(.,'Front-End')]
+...  //option[contains(.,'Data Science')]
+...  //option[contains(.,'Devops')] 
+...  //option[contains(.,'UX e Design')]
+...  //option[contains(.,'Mobile')]
+...  //option[contains(.,'Inovação e Gestão')]
 
 *** Test Cases ***
 Verificar se ao preencher os campos do formulário corretamente os dados são inseridos na lista e se um novo card é criado no time esperado
@@ -32,6 +33,10 @@ Verificar se é possivel criar mais de um card se preenchermos os campos correta
     E clique no botão criar card
     Então identificar 3 cards no time esperado
 
+ Verificar se é possivel criar um card para cada time disponivel se preenchermos os campos corretamente
+     
+    Dado que preencha os campos do formulario
+    Então criar e identificar 1 card em cada time disponivel
 
 *** Keywords ***  
 
@@ -57,3 +62,6 @@ Então identificar 3 cards no time esperado
         E clique no botão criar card
     END
     Sleep    10s
+
+Então criar e identificar 1 card em cada time disponivel
+    
