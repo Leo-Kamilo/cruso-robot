@@ -45,10 +45,10 @@ Dado que preencha os campos do formulario
     Input Text     ${CAMPO_NOME}     ${Nome}
     ${Cargo}        FakerLibrary.Job
     Input Text     ${CAMPO_CARGO}    ${Cargo}
-    ${Imagem}       FakerLibrary.Image Url
+    ${Imagem}       FakerLibrary.Image Url    width=100    height=100
     Input Text     ${CAMPO_IMAGEM}   ${Imagem} 
     Click Element  ${CAMPO_TIME}
-    Click Element  ${OPCAO_PROGRAMACAO}
+    Click Element  ${selecionar_times}[0]
 
 E clique no botão criar card
     Click Element    ${CAMPO_CARD}
@@ -64,4 +64,10 @@ Então identificar 3 cards no time esperado
     Sleep    10s
 
 Então criar e identificar 1 card em cada time disponivel
-    
+    FOR    ${indice}    ${time}    IN ENUMERATE    @{selecionar_times}
+        Dado que preencha os campos do formulario
+        Click Element    ${time}
+        E clique no botão criar card
+    END
+
+    Sleep    10s
